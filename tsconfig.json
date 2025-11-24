@@ -1,0 +1,67 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "dist",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "declaration": true,
+    "declarationDir": "dist",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "importHelpers": true,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": "src/",
+    "paths": {
+      "~app/*": [
+        "app/*"
+      ],
+      "~recoil/*": [
+        "recoil/*"
+      ],
+      "~components/*": [
+        "components/*"
+      ],
+      "~hooks/*": [
+        "hooks/*"
+      ],
+      "~services/*": [
+        "services/*"
+      ],
+      "~api/*": [
+        "api/*"
+      ],
+      "~mutations/*": [
+        "mutations/*"
+      ],
+      "~queries/*": [
+        "queries/*"
+      ],
+      "~contexts/*": [
+        "contexts/*"
+      ],
+      "~constants/*": [
+        "constants/*"
+      ],
+      "~screens/*": [
+        "screens/*"
+      ]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"]
+}
